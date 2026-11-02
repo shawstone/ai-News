@@ -66,7 +66,7 @@ platforms:
   api_url: ""                            # 热榜数据 API 地址（留空使用默认地址）
                                         # 如果你自行部署了 newsnow，填入你的地址，如: https://your-domain.com/api/s
   sources:
-    # === 综合新闻媒体类 ===
+# === 综合新闻媒体类 ===
     - id: "toutiao"
       name: "今日头条"
     - id: "baidu"
@@ -75,7 +75,6 @@ platforms:
       name: "凤凰网"
     - id: "zaobao"
       name: "联合早报"
-
     # === 财经投资类 ===
     - id: "wallstreetcn-hot"
       name: "华尔街见闻 最热"
@@ -83,7 +82,6 @@ platforms:
       name: "华尔街见闻 最新"
     - id: "cls-hot"
       name: "财联社热门"
-
     # === 社交/短视频/娱乐类 ===
     - id: "weibo"
       name: "微博"
@@ -97,7 +95,6 @@ platforms:
       name: "知乎"
     - id: "hupu"
       name: "虎扑"
-
     # === 科技类平台 ===
     - id: "ithome"
       name: "IT之家"
@@ -107,7 +104,6 @@ platforms:
       name: "GitHub"
     - id: "hackernews"
       name: "Hacker News"
-
 
 
 # ===============================================================
