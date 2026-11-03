@@ -40,7 +40,7 @@ app:
 # 详细时间线图请查看 config/timeline.yaml
 # ===============================================================
 schedule:
-  enabled: false                        # 是否启用调度系统（true=启用, false=关闭，默认关闭）
+  enabled: true                        # 是否启用调度系统（true=启用, false=关闭，默认关闭）
   preset: "morning_evening"             # 预设模板名称（见上方说明）
 
 
@@ -170,36 +170,37 @@ rss:
       url: "https://english.stackexchange.com/feeds"
 
     # ═══════════════════════════════════════════════════════════════
-    #                    粤语文化、大湾区与港式英文/流行
+    #                 粤语文化、大湾区与港式英文/流行
     # ═══════════════════════════════════════════════════════════════
-    - id: "rthk-news-cantonese"
+    - id: "rthk-news-local"
       name: "香港电台 RTHK 中文新闻 (粤语表达/港闻素材)"
       url: "https://rthk.hk/rthk/news/rss/c_expressnews_clocal.xml"
 
-    - id: "hk01-culture"
-      name: "香港01 - 艺文/粤语文化"
-      url: "https://www.hk01.com/rss/zone/13"
-
-    - id: "gzaea-cantonese"
-      name: "广州方言/粤语文化相关动态 (RSSHub)"
-      url: "https://rsshub.app/gzaea/news"
+    # ═══════════════════════════════════════════════════════════════
+    #         国内论坛/栏目、汉语教学与流行语/汉字文化
+    # ═══════════════════════════════════════════════════════════════
+    - id: "the-paper-culture"
+      name: "澎湃新闻 - 文化/语言文化栏目"
+      url: "https://rsshub.app/thepaper/channel/25950"
 
     # ═══════════════════════════════════════════════════════════════
-    #                    普通话、汉语教学与流行语/汉字文化
+    #                 国外论坛/栏目、粤英汉语言
     # ═══════════════════════════════════════════════════════════════
     - id: "language-log"
       name: "Language Log (宾夕法尼亚大学著名语言学博客)"
       url: "http://languagelog.ldc.upenn.edu/nll/?feed=rss2"
 
-    - id: "the-paper-culture"
-      name: "澎湃新闻 - 文化/语言文化栏目"
-      url: "https://rsshub.app/thepaper/channel/25950"
+    - id: "reddit-popular"
+      name: "reddit-热门"
+      url: "https://www.reddit.com/r/popular/.rss"
 
-    - id: "zhihu-daily-language"
-      name: "知乎精选 - 语言与文字"
-      url: "https://rsshub.app/zhihu/daily"
+    - id: "reddit-r/asklinguistics"
+      name: "reddit-语言学问答版"
+      url: "https://www.reddit.com/r/asklinguistics/.rss"
 
-
+    - id: "reddit-r/ChineseLanguage"
+      name: "reddit-普通话与现代汉语研究"
+      url: "https://www.reddit.com/r/ChineseLanguage/.rss"
 
 
 
