@@ -147,6 +147,14 @@ rss:
       name: "reddit-最新"
       url: "https://www.reddit.com/.rss"
 
+    - id: "zhihu-hot"
+      name: "知乎热榜"
+      url: "https://rsshub.dicomp.net/zhihu/hot"
+
+    - id: "zhihu-daily"
+      name: "知乎日报"
+      url: "https://rsshub.dicomp.net/zhihu/daily"
+      
     # ═══════════════════════════════════════════════════════════════
     #                 国外-英语学习、语言学与地道表达
     # ═══════════════════════════════════════════════════════════════
