@@ -131,6 +131,7 @@ rss:
   # - 正整数：覆盖全局设置，只推送此天数内的文章
   # - 0：禁用此频道的新鲜度过滤，推送所有文章
   feeds:
+    # 国外
     - id: "hacker-news"
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
@@ -147,6 +148,15 @@ rss:
       name: "reddit-最新"
       url: "https://www.reddit.com/.rss"
 
+    # 国内
+    - id: "people-news"
+      name: "人民网"
+      url: "http://www.people.com.cn/rss/ywkx.xml"
+    
+    - id: "cctv-xwlb"
+      name: "央视新闻联播"
+      url: "https://rsshub.dicomp.net/cctv/tv/lm/xwlb"
+    
     - id: "zhihu-hot"
       name: "知乎热榜"
       url: "https://rsshub.dicomp.net/zhihu/hot"
@@ -154,7 +164,20 @@ rss:
     - id: "zhihu-daily"
       name: "知乎日报"
       url: "https://rsshub.dicomp.net/zhihu/daily"
+
+    # 中国教育
+    - id: "moe-newest_file"
+      name: "中国教育部-新文件"
+      url: "https://rsshub.dicomp.net/gov/moe/newest_file"    
+
+    - id: "moe-policy_anal"
+      name: "中国教育部-政策解读"
+      url: "https://rsshub.dicomp.net/gov/moe/policy_anal"  
       
+    - id: "neea-ntce"
+      name: "中小学教师资格"
+      url: "https://rsshub.dicomp.net/neea/local/ntce"    
+
     # ═══════════════════════════════════════════════════════════════
     #                 国外-英语学习、语言学与地道表达
     # ═══════════════════════════════════════════════════════════════
