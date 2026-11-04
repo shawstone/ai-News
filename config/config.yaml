@@ -101,14 +101,8 @@ platforms:
       name: "GitHub"
     - id: "hackernews"
       name: "Hacker News"
-    - id: "reddit"
-      name: "Reddit"
-    - id: "twitter"
-      name: "X/Twitter"
     - id: "douban"
       name: "豆瓣热门"
-    - id: "tiktok"
-      name: "国际抖音"
 
 
 
@@ -141,20 +135,23 @@ rss:
       name: "Hacker News"
       url: "https://hnrss.org/frontpage"
 
-    - id: "ruanyifeng"
-      name: "阮一峰的网络日志"
-      url: "http://www.ruanyifeng.com/blog/atom.xml"
-      enabled: false
-
     - id: "yahoo-finance"
       name: "雅虎财经"
-      url: "https://finance.yahoo.com/news/rssindex"
+      url: "https://news.google.com/rss/search?q=when:24h+site:finance.yahoo.com/economy&hl=en-US&gl=US&ceid=US:en"
+
+    - id: "reddit-popular"
+      name: "reddit-热门"
+      url: "https://www.reddit.com/r/popular/.rss"
+
+    - id: "reddit-news"
+      name: "reddit-最新"
+      url: "https://www.reddit.com/.rss"
 
     # ═══════════════════════════════════════════════════════════════
-    #                    英语学习、语言学与地道表达
+    #                 国外-英语学习、语言学与地道表达
     # ═══════════════════════════════════════════════════════════════
     - id: "bbc-learning-english"
-      name: "BBC Learning English"
+      name: "BBC 学英语"
       url: "https://feeds.bbci.co.uk/learningenglish/english/rss"
 
     - id: "economist-language"
@@ -163,10 +160,10 @@ rss:
 
     - id: "merriam-webster-word-of-the-day"
       name: "韦氏词典每日一词 (Word of the Day)"
-      url: "https://www.merriam-webster.com/word-of-the-day/feed/rss/index.xml"
+      url: "https://www.merriam-webster.com/wotd/feed/rss2"
 
     - id: "english-language-stackexchange"
-      name: "English Language & Usage (StackExchange 问答社区)"
+      name: "英语专业社区 (StackExchange 问答社区)"
       url: "https://english.stackexchange.com/feeds"
 
     # ═══════════════════════════════════════════════════════════════
@@ -176,23 +173,25 @@ rss:
       name: "香港电台 RTHK 中文新闻 (粤语表达/港闻素材)"
       url: "https://rthk.hk/rthk/news/rss/c_expressnews_clocal.xml"
 
-    # ═══════════════════════════════════════════════════════════════
-    #         国内论坛/栏目、汉语教学与流行语/汉字文化
-    # ═══════════════════════════════════════════════════════════════
-    - id: "the-paper-culture"
-      name: "澎湃新闻 - 文化/语言文化栏目"
-      url: "https://rsshub.app/thepaper/channel/25950"
+    - id: "stheadline-news-daily"
+      name: "星岛头条(粤语表达/港闻素材)"
+      url: "https://hd.stheadline.com/rss/news/daily/"
+
+    - id: "scmp-news"
+      name: "南华早报(粤语表达/港闻素材)"
+      url: "https://www.scmp.com/rss/91/feed/"
 
     # ═══════════════════════════════════════════════════════════════
-    #                 国外论坛/栏目、粤英汉语言
+    #            国内论坛/栏目-汉语教学与流行语/汉字文化
+    # ═══════════════════════════════════════════════════════════════
+
+
+    # ═══════════════════════════════════════════════════════════════
+    #                 国外论坛/栏目-粤英汉语言
     # ═══════════════════════════════════════════════════════════════
     - id: "language-log"
       name: "Language Log (宾夕法尼亚大学著名语言学博客)"
       url: "http://languagelog.ldc.upenn.edu/nll/?feed=rss2"
-
-    - id: "reddit-popular"
-      name: "reddit-热门"
-      url: "https://www.reddit.com/r/popular/.rss"
 
     - id: "reddit-r/asklinguistics"
       name: "reddit-语言学问答版"
@@ -225,7 +224,7 @@ report:
                                       # keyword = 按关键词分组显示
                                       # platform = 按平台/来源分组显示
 
-  sort_by_position_first: false       # 关键词模式排序（仅 display_mode=keyword 时生效）
+  sort_by_position_first: true       # 关键词模式排序（仅 display_mode=keyword 时生效）
                                       # true = 按 frequency_words.txt 的定义顺序
                                       # false = 按匹配到的热点条数排序（多的在前）
 
